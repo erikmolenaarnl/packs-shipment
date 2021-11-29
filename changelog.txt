@@ -1,0 +1,90 @@
+Version 1.6.2
+- BUGFIX: Critical error
+
+Version 1.6.1
+- BUGFIX: Settings loading twice
+
+Version 1.6.0
+- Replaced all API request with built-in Wordpress http requests
+
+Version 1.5.0
+- Added feature shipments data retention
+
+Version 1.4.7
+- Added support for weight in grams
+
+Version 1.4.6
+- BUGFIX housenumber in second address field
+
+Version 1.4.5
+- FIX no initial default value for shipping seal
+- FIX long timeout when update information if update information can't be retrieved
+
+Version 1.4.4
+- FIX Error if update information can't be retrieved
+
+Version 1.4.3
+- IMPROVEMENT: Support for street names starting with a number
+
+Version 1.4.2
+- FIX removed unused downgrade method
+
+Version 1.4.1
+- IMPROVEMENT: Weight is now pre-filled
+- IMPROVEMENT: Api settings user and password are sorted
+- FIX incorrect translation string on settings page
+- IMPROVEMENT: User with Shop Manager role can now register shipments
+
+Version 1.4.0
+- Added feature for updating the plugin.
+
+Version 1.3.0
+- Added the option to set a default seal for shipments
+- Added Track&Trace to the order grid
+- Labels already printed are marked green now in the order grid
+- Added Dutch translations
+
+Version 1.2.5
+- FIX php bug date format wrong year when using yy
+
+Version 1.2.4
+- FIX for WP 5.6 incorrect keys sent in headers for shipment creation
+
+Version 1.2.3
+- FIX error when using custom order numbers
+
+Version 1.2.2
+- FIX incorrect URL on live setting for getProducts
+
+Version 1.2.1
+- New dutch translations added
+- Loaddate and deliverydate are now filled with default dates (today and tomorrow)
+
+Version 1.2.0
+- Added switch that allows shop owner to switch to test API of live API.
+- Removed API URLS from settings page
+- New Feature: Adds track&trace URL to the Order Notes
+
+Version 1.1.5
+- Added support for company field in delivery address
+
+Version 1.1.4
+- Added support for empty allowances
+
+Version 1.1.3
+- Removed frontend query possibility of custom post type shipments
+
+Version 1.1.2
+- Removed PDFMerger
+
+Version 1.1.1
+- Remove redundant code
+- Correction Loadaddress reference field to API
+
+Version 1.1.0
+- Added new feature Track&Trace URL
+- Added reference field to sender settings
+- Disabled e-mail
+
+Version 1.0.0
+- Release plugin

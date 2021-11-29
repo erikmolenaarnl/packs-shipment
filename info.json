@@ -1,0 +1,19 @@
+{
+	"name" : "Packs Shipments",
+	"version" : "1.6.2",
+	"download_url" : "https://wiseconn.nl/wp-content/uploads/packs/WC_Packs_1.6.2.zip",
+	"requires" : "3.0",
+	"tested" : "5.8.1",
+	"requires_php" : "7.0",
+	"last_updated" : "2021-09-29 11:45:00",
+	"sections" : {
+		"description" : "Plugin voor het aanmaken/voormelden van verzendingen bij Packs.",
+		"installation" : "Upload the plugin naar uw Wordpress en activeer de plugin.",
+		"changelog" : "<h4>1.6.1 - November 5, 2021</h4><ul><li>BUGFIX: Critical error</li></ul>",
+		"screenshots" : "<ol><li><a href='https://wiseconn.nl/wp-content/uploads/packs/packs_screenshot_1.png' target='_blank'><img src='https://wiseconn.nl/wp-content/uploads/packs/packs_screenshot_1.png' alt='Packs Shipments Order overview' /></a><p>Packs Shipments Order overview</p></li></ol>"
+	},
+	"banners" : {
+		"low" : "https://wiseconn.nl/wp-content/uploads/packs/banner-772x250.png",
+		"high" : "https://wiseconn.nl/wp-content/uploads/packs/banner-1544x500.png"
+	}
+}
