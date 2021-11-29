@@ -1,0 +1,760 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Packs Shipments\n"
+"POT-Creation-Date: 2021-09-29 10:49+0200\n"
+"PO-Revision-Date: 2021-09-29 10:50+0200\n"
+"Last-Translator: Incolor <info@incolor.nl>\n"
+"Language-Team: Incolor <info@incolor.nl>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: packs.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/class-packs-admin-assets.php:49
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:118
+msgid "OrderNr"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:119
+msgid "Batch"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:120
+msgid "Status"
+msgstr "Status"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:121
+#: includes/class-packs-settings-sender.php:56
+msgid "Handler"
+msgstr "Vervoerder"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:122
+#: includes/class-packs-settings-sender.php:70
+msgid "Network"
+msgstr "Netwerk"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:123
+#, php-format
+msgid "%s data"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:124
+msgid "Items"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:126
+msgid "Packingslip"
+msgstr "Pakbon"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:127
+msgid "ShipmentId"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:128
+#: includes/admin/class-packs-admin-meta-boxes.php:129
+msgid "Track & Trace Link"
+msgstr ""
+
+#: includes/admin/class-packs-admin-meta-boxes.php:375
+#: templates/emails/packs.php:15
+msgid "Delivery Address"
+msgstr "Verzendadres"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:381
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:69
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:118
+#: includes/class-packs-settings-sender.php:190
+msgid "Country"
+msgstr "Land"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:382
+#: includes/class-packs-settings-sender.php:98
+#: templates/emails/email-shipment-details.php:30 templates/emails/packs.php:11
+#: templates/emails/plain/email-shipment-details.php:24
+msgid "Name"
+msgstr "Naam"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:384
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:49
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:98
+#: includes/class-packs-settings-sender.php:111
+msgid "Company"
+msgstr "Bedrijf"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:386
+#: includes/class-packs-settings-sender.php:124
+#: templates/emails/email-shipment-details.php:31
+#: templates/emails/plain/email-shipment-details.php:25
+msgid "Street"
+msgstr "Straat"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:387
+#: templates/emails/email-shipment-details.php:32
+#: templates/emails/plain/email-shipment-details.php:26
+msgid "Number"
+msgstr "Nummer"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:388
+msgid "NumberExt"
+msgstr "Nummer toevoeging"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:389
+#: includes/class-packs-settings-sender.php:163
+#: templates/emails/email-shipment-details.php:33
+#: templates/emails/plain/email-shipment-details.php:27
+msgid "Zipcode"
+msgstr "Postcode"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:390
+msgid "Place"
+msgstr "Plaats"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:391
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:81
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:130
+#: includes/admin/views/packs-createshipments-page.php:45
+#: includes/class-packs-settings-sender.php:218
+msgid "Reference"
+msgstr "Referentie"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:462
+msgid "Get Labels and Track&Trace"
+msgstr "Haal pakbonnen op + Track&Trace"
+
+#: includes/admin/class-packs-admin-meta-boxes.php:475
+msgid "Download Packingslip"
+msgstr "Download Pakbon"
+
+#: includes/admin/class-packs-admin-order-column.php:95
+msgid "Registered"
+msgstr "Voorgemeld"
+
+#: includes/admin/class-packs-admin-order-column.php:98
+msgid "Register Shipment"
+msgstr "Zending voormelden"
+
+#: includes/admin/class-packs-admin-order-column.php:138
+#: includes/admin/class-packs-admin-order-column.php:150
+#: includes/admin/class-packs-admin-order-column.php:153
+#: includes/admin/class-packs-admin-order-column.php:157
+msgid "Print Packingslip"
+msgstr "Labels afdrukken"
+
+#: includes/admin/class-packs-admin-post-types.php:85
+#: includes/admin/class-packs-admin-post-types.php:88
+#: includes/admin/class-packs-admin-post-types.php:90
+msgid "Order updated."
+msgstr "Order bijgewerkt."
+
+#: includes/admin/class-packs-admin-post-types.php:86
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/class-packs-admin-post-types.php:87
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/admin/class-packs-admin-post-types.php:89
+msgid "Revision restored."
+msgstr ""
+
+#: includes/admin/class-packs-admin-post-types.php:91
+msgid "Order saved."
+msgstr "Order opgeslagen."
+
+#: includes/admin/class-packs-admin-post-types.php:92
+msgid "Order submitted."
+msgstr ""
+
+#. translators: %s: date
+#: includes/admin/class-packs-admin-post-types.php:95
+#, php-format
+msgid "Order scheduled for: %s."
+msgstr ""
+
+#: includes/admin/class-packs-admin-post-types.php:96
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/admin/class-packs-admin-post-types.php:98
+msgid "Order draft updated."
+msgstr ""
+
+#: includes/admin/class-packs-admin-post-types.php:99
+msgid "Order updated and sent."
+msgstr ""
+
+#. translators: %s: order count
+#: includes/admin/class-packs-admin-post-types.php:116
+#, php-format
+msgid "%s shipment updated."
+msgid_plural "%s shipments updated."
+msgstr[0] "%s verzending bijgewerkt."
+msgstr[1] "%s verzendingen bijgewerkt."
+
+#. translators: %s: order count
+#: includes/admin/class-packs-admin-post-types.php:118
+#, php-format
+msgid "%s shipment not updated, somebody is editing it."
+msgid_plural "%s shipments not updated, somebody is editing them."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: order count
+#: includes/admin/class-packs-admin-post-types.php:120
+#, php-format
+msgid "%s shipment permanently deleted."
+msgid_plural "%s shipments permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: order count
+#: includes/admin/class-packs-admin-post-types.php:122
+#, php-format
+msgid "%s shipment moved to the Trash."
+msgid_plural "%s shipments moved to the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: order count
+#: includes/admin/class-packs-admin-post-types.php:124
+#, php-format
+msgid "%s shipment restored from the Trash."
+msgid_plural "%s shipments restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-packs-admin-post-types.php:161
+msgid "Shipment ID"
+msgstr "Verzending ID"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:41
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:90
+msgid "First name"
+msgstr "Voornaam"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:45
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:94
+msgid "Last name"
+msgstr "Achternaam"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:53
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:102
+msgid "Address line 1"
+msgstr "Straat en huisnummer"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:57
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:106
+msgid "Address line 2"
+msgstr "Toevoeging"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:61
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:110
+#: includes/class-packs-settings-sender.php:177
+msgid "City"
+msgstr "Plaats"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:65
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:114
+msgid "Postcode / ZIP"
+msgstr "Postcode"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:73
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:122
+msgid "Select a country&hellip;"
+msgstr "Selecteer een land&hellip;"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:76
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:125
+msgid "State / County"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:160
+#: includes/class-packs-customposttype.php:46
+msgid "Shipment"
+msgstr "Verzending"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:168
+#, php-format
+msgid "%1$s #%2$s details"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:177
+#: includes/class-packs-settings.php:81
+msgid "General"
+msgstr "Algemeen"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:180
+msgid "Date created:"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:183
+msgid "h"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:184
+msgid "m"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:191
+msgid "Status:"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:196
+msgid "Customer payment page &rarr;"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:215
+msgid "Load Address"
+msgstr "Laadadres"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:216
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:298
+msgid "Edit"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:218
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:300
+msgid "Load shipping address"
+msgstr "Verzendadres inladen"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:219
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:301
+msgid "Copy billing address"
+msgstr "Kopieer factuuradres"
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:229
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:311
+msgid "Address:"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:229
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:311
+msgid "No shipping address set."
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:253
+msgid "Customer provided note:"
+msgstr ""
+
+#: includes/admin/meta-boxes/class-packs-meta-box-shipment-data.php:297
+msgid "Shipping"
+msgstr ""
+
+#: includes/admin/views/packs-createshipments-page.php:34
+msgid ""
+"Set the required options for every order. You can use the arrow to copy the "
+"value to the other rows."
+msgstr ""
+
+#: includes/admin/views/packs-createshipments-page.php:40
+msgid "OrderID"
+msgstr "Ordernummer"
+
+#: includes/admin/views/packs-createshipments-page.php:41
+msgid "Colli"
+msgstr "Colli"
+
+#: includes/admin/views/packs-createshipments-page.php:42
+msgid "Seal"
+msgstr "Zegel"
+
+#: includes/admin/views/packs-createshipments-page.php:43
+msgid "Load date"
+msgstr "Laaddatum"
+
+#: includes/admin/views/packs-createshipments-page.php:44
+msgid "Delivery date"
+msgstr "Bezorgdatum"
+
+#: includes/admin/views/packs-createshipments-page.php:46
+msgid "Weight"
+msgstr "Gewicht"
+
+#: includes/admin/views/packs-createshipments-page.php:47
+msgid "Fee"
+msgstr "Toeslag"
+
+#: includes/admin/views/packs-createshipments-page.php:100
+msgid "Choose Fee"
+msgstr "Kies toeslag"
+
+#: includes/admin/views/packs-createshipments-page.php:254
+msgid ""
+"Productoptions Empty, please check if API server is still online or check "
+"API URL"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:45
+#: includes/class-packs-customposttype.php:47
+#: includes/class-packs-customposttype.php:48
+#: includes/class-packs-customposttype.php:78
+msgid "Shipments"
+msgstr "Verzendingen"
+
+#: includes/class-packs-customposttype.php:49
+msgid "Add New"
+msgstr "Voeg nieuwe toe"
+
+#: includes/class-packs-customposttype.php:50
+msgid "Add New Shipment"
+msgstr "Voeg nieuwe verzending toe"
+
+#: includes/class-packs-customposttype.php:51
+msgid "Edit Shipment"
+msgstr "Bewerk verzending"
+
+#: includes/class-packs-customposttype.php:52
+msgid "New Shipment"
+msgstr "Nieuwe verzending"
+
+#: includes/class-packs-customposttype.php:53
+msgid "View Shipment"
+msgstr "Bekijk verzending"
+
+#: includes/class-packs-customposttype.php:54
+msgid "View Shipments"
+msgstr "Bekijk verzendingen"
+
+#: includes/class-packs-customposttype.php:55
+msgid "Search Shipment"
+msgstr "Zoek verzendingen"
+
+#: includes/class-packs-customposttype.php:56
+msgid "No Shipments found"
+msgstr "Geen verzendingen gevonden"
+
+#: includes/class-packs-customposttype.php:57
+msgid "No Shipments found in trash"
+msgstr "Geen verzendingen in prullenbak"
+
+#: includes/class-packs-customposttype.php:58
+msgid "Parent Shipment"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:59
+msgid "Featured Image"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:60
+msgid "Set Featured Image"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:61
+msgid "Remove Featured Image"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:62
+msgid "Use as featured image"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:63
+msgid "Shipment Archives"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:64
+msgid "Insert into Shipment"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:65
+msgid "Uploaded to this Shipment"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:66
+msgid "Filter Shipment list"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:67
+msgid "Shipment list navigation"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:68
+msgid "Shipments list"
+msgstr ""
+
+#: includes/class-packs-customposttype.php:69
+msgid "Shipment attributes"
+msgstr ""
+
+#: includes/class-packs-settings-callbacks.php:26
+msgid ""
+"<b>Warning!</b> The settings below are meant for debugging/development only. "
+"Do not use them on a live website!"
+msgstr ""
+
+#: includes/class-packs-settings-callbacks.php:35
+msgid ""
+"These are used for the (optional) footer columns in the <em>Modern "
+"(Premium)</em> template, but can also be used for other elements in your "
+"custom template"
+msgstr ""
+
+#: includes/class-packs-settings-callbacks.php:374
+msgid "Image resolution"
+msgstr ""
+
+#: includes/class-packs-settings-general.php:38
+msgid "General settings"
+msgstr "Algemene instellingen"
+
+#: includes/class-packs-settings-general.php:44
+msgid "Which API do you want to use"
+msgstr "Welke API versie wilt u gebruiken?"
+
+#: includes/class-packs-settings-general.php:51
+msgid "Live"
+msgstr ""
+
+#: includes/class-packs-settings-general.php:52
+msgid "Test"
+msgstr ""
+
+#: includes/class-packs-settings-general.php:59
+msgid "Packs API Username"
+msgstr "Packs API Gebruikersnaam"
+
+#: includes/class-packs-settings-general.php:72
+msgid "Packs API Password"
+msgstr "Packs API Wachtwoord"
+
+#: includes/class-packs-settings-general.php:85
+msgid "Shipments data retention in x days"
+msgstr "Verzendingen data retentie in x dagen"
+
+#: includes/class-packs-settings-sender.php:50
+msgid "Sender settings"
+msgstr "Verzender Instellingen"
+
+#: includes/class-packs-settings-sender.php:64
+msgid ""
+"Example: All, HPD, Packs, A7, Circuit, JBM, FRL, Merenpost, PietSpoed, "
+"EfficientLogistics, InControlLogistics"
+msgstr ""
+"Bv: All, HPD, Packs, A7, Circuit, JBM, FRL, Merenpost, PietSpoed, "
+"EfficientLogistics, InControlLogistics"
+
+#: includes/class-packs-settings-sender.php:78
+msgid "Example: All, InNight, NextDay, Evening, Sunday"
+msgstr "Bv: All, InNight, NextDay, Evening, Sunday"
+
+#: includes/class-packs-settings-sender.php:84
+msgid "Which seal option you want to use as default"
+msgstr "Kies een standaard zegel voor verzendingen"
+
+#: includes/class-packs-settings-sender.php:92
+msgid "First save the general and sender options to load the seal options"
+msgstr ""
+"Sla eerst the algemene en verzender instellingen op om de zegels te laden."
+
+#: includes/class-packs-settings-sender.php:137
+msgid "Housenumber"
+msgstr "Huisnummer"
+
+#: includes/class-packs-settings-sender.php:150
+msgid "Number Ext."
+msgstr "Toevoeging."
+
+#: includes/class-packs-settings-sender.php:171
+msgid "Example: 1234AB (No spaces)"
+msgstr "Bv: 1234AB (geen spaties)"
+
+#: includes/class-packs-settings-sender.php:198
+msgid "Example: NL (country code)"
+msgstr "Bv: NL (landcode)"
+
+#: includes/class-packs-settings-sender.php:204
+msgid "Email"
+msgstr ""
+
+#: includes/class-packs-settings-sender.php:212
+msgid "Shop Owner's email address"
+msgstr "E-mailadres van de webwinkeleigenaar"
+
+#: includes/class-packs-settings.php:43 includes/class-packs-settings.php:44
+msgid "Packs Shipments Settings"
+msgstr "Packs Verzending Instellingen"
+
+#: includes/class-packs-settings.php:56
+msgid "Settings"
+msgstr "Instellingen"
+
+#: includes/class-packs-settings.php:69
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: includes/class-packs-settings.php:70
+msgid "Contact"
+msgstr "Contact"
+
+#: includes/class-packs-settings.php:82
+msgid "Sender"
+msgstr "Verzender"
+
+#: includes/class-packs-shipment-email.php:178
+#, php-format
+msgid ""
+"This controls the main heading contained within the email notification. "
+"Leave blank to use the default heading: <code>%s</code>."
+msgstr ""
+
+#: includes/class-packs-shipment-email.php:189
+msgid "Plain text"
+msgstr ""
+
+#: includes/class-packs-shipment-email.php:190
+msgid "HTML"
+msgstr ""
+
+#: includes/class-packs-shipment-email.php:191
+msgid "Multipart"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: includes/views/packs-settings-page.php:8
+msgid "Packs Shipments"
+msgstr "Packs Verzendingen"
+
+#: includes/views/sender-settings-hint.php:21
+#, php-format
+msgid ""
+"Make sure you have set your sender settings, check the settings under <b>"
+"%sSender%s</b>"
+msgstr ""
+"Controleer of u de verzender heeft ingesteld, bekijk deze instellingen onder "
+"<b>%sVerzender%s</b>"
+
+#: includes/views/sender-settings-hint.php:22
+msgid "Hide this message"
+msgstr "Verberg dit bericht"
+
+#: packs.php:327
+#, php-format
+msgid "Packs Shipments requires %sWooCommerce%s to be installed & activated!"
+msgstr ""
+"Packs Verzendingen is afhankelijk van %sWooCommerce%s om te kunnen worden "
+"geïnstalleerd en geactiveerd."
+
+#: packs.php:341
+msgid "Packs Shipments requires PHP 5.3 or higher (5.6 or higher recommended)."
+msgstr ""
+"Packs Shipments heeft minimaal PHP 5.3 of hoger nodig om te functioneren "
+"(5.6 of hoger aanbevolen)"
+
+#: packs.php:342
+msgid "How to update your PHP version"
+msgstr ""
+
+#: packs.php:436
+msgid "Once Every Hour"
+msgstr ""
+
+#: templates/emails/email-shipment-details.php:34
+#: templates/emails/plain/email-shipment-details.php:28
+msgid "City/Town"
+msgstr "Plaats"
+
+#. translators: %s: Order ID.
+#: templates/emails/email-shipment-details.php:65
+#, php-format
+msgid "[Order #%s]"
+msgstr ""
+
+#: templates/emails/email-shipment-details.php:72
+msgid "Product"
+msgstr ""
+
+#: templates/emails/email-shipment-details.php:73
+msgid "Quantity"
+msgstr "Aantal"
+
+#: templates/emails/email-shipment-details.php:74
+msgid "Price"
+msgstr ""
+
+#: templates/emails/email-shipment-details.php:107
+#: templates/emails/plain/email-shipment-details.php:51
+msgid "Note:"
+msgstr ""
+
+#. translators: %s: Customer billing full name
+#: templates/emails/packs-new-shipment.php:29
+#: templates/emails/plain/packs-new-shipment.php:25
+#, php-format
+msgid "You’ve received the following order from %s:"
+msgstr ""
+
+#: templates/emails/packs.php:8
+msgid "You order shipment has changed status"
+msgstr "De zending van uw order is van status veranderd"
+
+#. translators: %1$s: Order ID. %2$s: Order date
+#: templates/emails/plain/email-shipment-details.php:31
+#, php-format
+msgid "[Order #%1$s] (%2$s)"
+msgstr ""
+
+#. translators: %s: Order link.
+#: templates/emails/plain/email-shipment-details.php:56
+#, php-format
+msgid "View order: %s"
+msgstr "Bekijk order: %s"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.wiseconn.nl/packs-extensie/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin voor het aanmaken/voormelden van verzendingen bij Packs."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "S.A. Bijma | Wiseconn B.V."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.wiseconn.nl/"
+msgstr ""
+
+#~ msgid "Packs Auth URL"
+#~ msgstr "Packs Authorisatie URL"
+
+#~ msgid "Get and Merge Labels"
+#~ msgstr "Labels ophalen en samenvoegen"
+
+#~ msgid "Length"
+#~ msgstr "Lengte"
+
+#~ msgid "Height"
+#~ msgstr "Hoogte"
+
+#~ msgid "Width"
+#~ msgstr "Breedte"
+
+#~ msgid "Packs API URL"
+#~ msgstr "Packs API URL"
+
+#~ msgid "Location"
+#~ msgstr "Locatie"
+
+#~ msgid "How do you want to view the PDF?"
+#~ msgstr "Hoe wilt u de PDF bekijken?"
+
+#~ msgid "Download the PDF"
+#~ msgstr "Download het PDF bestand"
+
+#~ msgid "All Shipments"
+#~ msgstr "Alle Verzendingen"
