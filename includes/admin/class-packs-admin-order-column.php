@@ -128,13 +128,8 @@ class Order_Column
                 $packingslipstatus = $wpdb->get_results("SELECT * FROM $wpdb->postmeta WHERE meta_key = 'packs_shipment_label_received' AND post_id = '$shipmentPostId' LIMIT 1", ARRAY_A);
             }
 
-            //var_dump($packingslipstatus);
-            //var_dump($packingslip[0]['meta_value']);
-
-
 
             if($packingslip){
-                //$generaloptionData = $this->getGeneraloption();
 
                     echo '<a class="button" href=' . $packingslip[0]['meta_value'] . '>' . __('Print Packingslip', 'packs-shipments') . '</a>';
 
@@ -186,10 +181,6 @@ class Order_Column
                 $shipmentPostId = (int)$shipmentPostId[0]['post_id'];
                 $tracktrace = $wpdb->get_results("SELECT * FROM $wpdb->postmeta WHERE meta_key = 'packs_shipment_tracktrace' AND post_id = '$shipmentPostId' LIMIT 1", ARRAY_A);
             }
-
-            //var_dump($shipmentPostId);
-
-            //var_dump($packingslip[0]['meta_value']);
 
 
             if($tracktrace){
