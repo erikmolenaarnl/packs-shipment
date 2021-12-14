@@ -87,7 +87,7 @@ class Exportshipments
             // PHP cURL  for https connection with auth
         $result = wp_remote_post( $this->apiAuthUrl, array(
                 'method'      => 'POST',
-                'timeout'     => 10,
+                'timeout'     => 30,
                 'redirection' => 10,
                 'httpversion' => '2.0',
                 'blocking'    => true,
@@ -197,29 +197,6 @@ class Exportshipments
                         'body'        => $xml_post_string
                     )
                 );
-
-//                $ch = curl_init();
-//
-//                curl_setopt_array($ch, array(
-//                    CURLOPT_URL => "".$this->apiUrl."",
-//                    CURLOPT_RETURNTRANSFER => true,
-//                    CURLOPT_ENCODING => "",
-//                    CURLOPT_MAXREDIRS => 10,
-//                    CURLOPT_TIMEOUT => 10,
-//                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_2_0,
-//                    CURLOPT_CUSTOMREQUEST => "POST",
-//                    CURLOPT_POSTFIELDS => "".$xml_post_string."",
-//                    CURLOPT_HTTPHEADER => array(
-//                        "Accept: application/json",
-//                        "Authorization: ".$this->tToken." ".$this->aToken,
-//                        "Content-Type: application/json",
-//                        "cache-control: no-cache",
-//                    ),
-//                    CURLOPT_SSL_VERIFYPEER => false,
-//
-//                ));
-//
-//                $response = curl_exec($ch);
 
 
                 if(empty($response)){

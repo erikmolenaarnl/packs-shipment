@@ -71,7 +71,7 @@ if ( !class_exists( '\\PACKS\\SHIPMENTS\\Admin\\Getlabels' ) ) :
             // PHP cURL  for https connection with auth
             $result = wp_remote_post( $this->apiAuthUrl, array(
                     'method'      => 'POST',
-                    'timeout'     => 10,
+                    'timeout'     => 30,
                     'redirection' => 10,
                     'httpversion' => '2.0',
                     'blocking'    => true,

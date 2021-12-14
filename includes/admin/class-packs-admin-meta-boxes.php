@@ -60,7 +60,7 @@ class Admin_Meta_Boxes {
 		 */
 		//add_action( 'packs_process_packs_shipment_meta', 'Meta_Box_Shipment_Items::save', 10, 2 );
 		add_action( 'packs_process_packs_shipment_meta', array( $this, 'packs_save_meta_batch' ), 30, 2 );
-		add_action( 'packs_process_packs_shipment_meta', 'Meta_Box_Shipment_Data::save', 40, 2 );
+//		add_action( 'packs_process_packs_shipment_meta', 'Meta_Box_Shipment_Data::save', 40, 2 );
 		//add_action( 'packs_process_packs_shipment_meta', 'Meta_Box_Shipment_Actions::save', 50, 2 );
 
 		// Error handling (for showing errors from meta boxes on next page load).

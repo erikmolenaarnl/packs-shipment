@@ -70,7 +70,7 @@ if ( !class_exists( '\\PACKS\\SHIPMENTS\\Admin\\Gettracktrace' ) ) :
             // PHP cURL  for https connection with auth
             $result = wp_remote_post( $this->apiAuthUrl, array(
                     'method'      => 'POST',
-                    'timeout'     => 10,
+                    'timeout'     => 30,
                     'redirection' => 10,
                     'httpversion' => '2.0',
                     'blocking'    => true,
@@ -78,35 +78,18 @@ if ( !class_exists( '\\PACKS\\SHIPMENTS\\Admin\\Gettracktrace' ) ) :
                     'body'        => $postString
                 )
             );
-//            $ch = curl_init();
-//            curl_setopt_array($ch, array(
-//                CURLOPT_URL => "".$this->apiAuthUrl."",
-//                CURLOPT_RETURNTRANSFER => true,
-//                CURLOPT_ENCODING => "",
-//                CURLOPT_MAXREDIRS => 10,
-//                CURLOPT_TIMEOUT => 2,
-//                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_2_0,
-//                CURLOPT_CUSTOMREQUEST => "POST",
-//                CURLOPT_POSTFIELDS => "".$postString."",
-//                CURLOPT_HTTPHEADER => array(
-//                    "Cache-Control: no-cache",
-//                    "Content-Type: application/x-www-form-urlencoded",
-//                ),
-//                CURLOPT_SSL_VERIFYPEER => false,
-//            ));
-//
-//            $result = curl_exec($ch);
 
-            $httpCode = $result["response"]["code"];
-//            curl_close($ch);
-//            unset($ch);
+            if(is_wp_error($result)){
+
+                // need to wait for error to occur again to figure out its nature
+                error_log($result->get_error_code() .'-'. $result->get_error_message());
+               return;
+            }
 
             $json = json_decode($result['body']);
             $this->tToken = $json->token_type;
             $this->aToken = $json->access_token;
 
-
-            return;
         }
 
         public function processData($data)
@@ -128,8 +111,7 @@ if ( !class_exists( '\\PACKS\\SHIPMENTS\\Admin\\Gettracktrace' ) ) :
             $i=1;
 
             $senderData = $this->getSenderData();
-            $handler = $senderData['handler'];
-            $network = $senderData['network'];
+
                 try {
                     // xml post structure
                     $xml_post_array = array(
@@ -138,7 +120,7 @@ if ( !class_exists( '\\PACKS\\SHIPMENTS\\Admin\\Gettracktrace' ) ) :
 
                     );
 
-                    $xml_post_string = json_encode($xml_post_array);
+                    $xml_post_string = $xml_post_array;
 
 
                     // PHP cURL  for https connection with auth

@@ -414,14 +414,20 @@ if ( !class_exists( 'PACKS_SHIPMENTS' ) ) :
         public function packs_delete_temp_folder(){
             $uploaddir = wp_get_upload_dir();
             $pdfDirPath = $uploaddir['basedir'] . DS . 'packs-pdf' . DS;
-            $files = scandir($pdfDirPath);
-            foreach($files as $file) {
+            if(directoryExists($pdfDirPath)){
+                $files = scandir($pdfDirPath);
+                if(is_array($files)){
+                    foreach($files as $file) {
 
-                if(is_file($file))
+                        if(is_file($file))
 
-                    // Delete the given file
-                    unlink($file);
+                            // Delete the given file
+                            unlink($file);
+                    }
+                }
             }
+
+
         }
 
         public function packs_delete_data(){

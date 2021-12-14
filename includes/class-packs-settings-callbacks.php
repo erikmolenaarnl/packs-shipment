@@ -533,7 +533,6 @@ class Settings_Callbacks {
 	 * @return array		validated options.
 	 */
 	public function validate( $input ) {
-		// echo '<pre>';var_dump($input);die('</pre>');
 		// Create our array for storing the validated options.
 		$output = array();
 

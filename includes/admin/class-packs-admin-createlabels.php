@@ -199,8 +199,11 @@ if ( !class_exists( '\\PACKS\\SHIPMENTS\\Admin\\Createlabels' ) ) :
                 update_post_meta( $orderId[0]['post_id'], 'packs_shipment_tracktrace', $trackingobjects['trackAndTraceUrl'] );
                 // Add track&trace URL to Order notes
                 $order = wc_get_order(  $orderId[0]['post_id'] );
-                $note = $trackingobjects['trackAndTraceUrl'];
-                $order->add_order_note( $note );
+                if($order){
+
+                    $note = $trackingobjects['trackAndTraceUrl'];
+                    $order->add_order_note( $note );
+                }
                 return true;
             }
         }

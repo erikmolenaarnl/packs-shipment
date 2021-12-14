@@ -76,35 +76,24 @@ if (!class_exists('\\PACKS\\SHIPMENTS\\Admin\\Getproductinfo')) :
                     'body'        => $postString
                 )
             );
-//            $ch = curl_init();
-//            curl_setopt_array($ch, array(
-//                CURLOPT_URL => "".$this->apiAuthUrl."",
-//                CURLOPT_RETURNTRANSFER => true,
-//                CURLOPT_ENCODING => "",
-//                CURLOPT_MAXREDIRS => 10,
-//                CURLOPT_TIMEOUT => 2,
-//                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_2_0,
-//                CURLOPT_CUSTOMREQUEST => "POST",
-//                CURLOPT_POSTFIELDS => "".$postString."",
-//                CURLOPT_HTTPHEADER => array(
-//                    "Cache-Control: no-cache",
-//                    "Content-Type: application/x-www-form-urlencoded",
-//                ),
-//                CURLOPT_SSL_VERIFYPEER => false,
-//            ));
-//
-//            $result = curl_exec($ch);
 
-            $httpCode = $result["response"]["code"];
-//            curl_close($ch);
-//            unset($ch);
+            if(is_wp_error($result)){
+                
+                // need to wait for error to occur again to figure out its nature
+                error_log('Packs Shipments Error: '.$result->get_error_code() .'-'. $result->get_error_message());
+                return;
+            }
 
             $json = json_decode($result['body']);
+            if(isset($json->error)){
+                AdminNotice::create()
+                    ->error('<strong>' . esc_html__('Packs Shipments', 'woocommerce') . '</strong> ' . sprintf('Error : %s', $json->error_description))
+                    ->show();
+
+                return;
+            }
             $this->tToken = $json->token_type;
             $this->aToken = $json->access_token;
-
-
-            return;
         }
 
         public function processData()
@@ -140,40 +129,22 @@ if (!class_exists('\\PACKS\\SHIPMENTS\\Admin\\Getproductinfo')) :
                         'body'        => $xml_post_string
                     )
                 );
-//                $ch = curl_init();
-//
-//                curl_setopt_array($ch, array(
-//                    CURLOPT_URL => "".$this->apiUrl."",
-//                    CURLOPT_RETURNTRANSFER => true,
-//                    CURLOPT_ENCODING => "",
-//                    CURLOPT_MAXREDIRS => 10,
-//                    CURLOPT_TIMEOUT => 10,
-//                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_2_0,
-//                    CURLOPT_CUSTOMREQUEST => "POST",
-//                    CURLOPT_POSTFIELDS => "".$xml_post_string."",
-//                    CURLOPT_HTTPHEADER => array(
-//                        "Accept: application/json",
-//                        "Authorization: ".$this->tToken." ".$this->aToken,
-//                        "Content-Type: application/json",
-//                        "cache-control: no-cache",
-//                    ),
-//                    CURLOPT_SSL_VERIFYPEER => false,
-//
-//                ));
-//
-//                $response = curl_exec($ch);
 
 
-                if(empty($response)){
+                if(is_wp_error($response)){
 
-                    $httpCode = $response["response"]["code"];
+                    // need to wait for error to occur again to figure out its nature
+                    error_log('Packs Shipments Error: '.$response->get_error_code() .'-'. $response->get_error_message());
+                    return;
+                } elseif(empty($response['body'])){
 
                     $this->continue = false;
                     AdminNotice::create()
-                        ->error('Api product info response is empty')
+                        ->error( '<strong>' . esc_html__('Packs Shipments', 'woocommerce') . '</strong> ' . 'Error : Api product info response is empty')
                         ->show();
 
                 }else{
+
 
                     $httpCode = $response["response"]["code"];
                     if($httpCode == 404) {
@@ -196,7 +167,6 @@ if (!class_exists('\\PACKS\\SHIPMENTS\\Admin\\Getproductinfo')) :
 
                     $jsonDecoded = json_decode(wp_remote_retrieve_body($response),true);
 
-
                     $this->responses = $jsonDecoded;
 
                     if(isset($senderData['default_seal'])){
@@ -205,9 +175,11 @@ if (!class_exists('\\PACKS\\SHIPMENTS\\Admin\\Getproductinfo')) :
                                 $default_seal = $key;
                             }
                         }
-                        $this->responses['products'][(int)$default_seal]['default'] = true;
-                    }
+                        if(isset($this->responses['products'][(int)$default_seal])){
 
+                            $this->responses['products'][(int)$default_seal]['default'] = true;
+                        }
+                    }
                     $this->productoptions = $this->responses['products'];
                 }
 
